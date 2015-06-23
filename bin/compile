@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-<<<<<<< HEAD
+
 ####### Configure environment
 
 set -o errexit    # always exit on error
@@ -45,7 +45,7 @@ HOME="$BUILD_DIR" GIT_DIR=".git" $VENDORED_NODE/bin/node $VENDORED_NPM/cli.js in
 if [ "${PIPESTATUS[*]}" != "0 0" ]; then
   echo " !     Failed to install dependencies with npm"
   exit 1
->>>>>>> chrisleishman/git_fix
+
 else
   warn_node_engine "$iojs_engine"
 fi
